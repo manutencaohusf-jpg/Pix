@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Confirmação de Pagamento</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+  }
+  .card{
+    background:#fff;
+    width:90%;
+    max-width:380px;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(0,0,0,.2);
+    padding:22px;
+    text-align:center;
+  }
+  h1{font-size:20px;margin:0 0 10px}
+  p{font-size:14px;color:#333}
+  .pix{
+    margin:16px 0;
+    padding:12px;
+    border:2px dashed #25d366;
+    border-radius:8px;
+    font-weight:bold;
+    color:#000;
+    word-break:break-all;
+  }
+  button{
+    background:#25d366;
+    color:#fff;
+    border:0;
+    padding:12px 18px;
+    border-radius:6px;
+    font-size:14px;
+    cursor:pointer;
+  }
+  .reveal{
+    display:none;
+    margin-top:14px;
+    font-size:16px;
+    font-weight:bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>CADÊ MEU PIX CALOTEIRO DESGRAÇADO</h1>
+  <p>FAZ ESSA PORRA LOGO SENÃO VOU COBRAR JUROS.</p>
+
+  <!-- TROQUE A CHAVE ABAIXO (pode ser qualquer texto, é zoeira) -->
+  <div class="pix" id="chave">
+    (11) 95318-2893
+  </div>
+
+  <button onclick="revelar()">Já paguei</button>
+
+  <div class="reveal" id="reveal">
+   BOM MESMO, DA PRÓXIMA EXPONHO FOTO SE NÃO PAGAR 😈
+  </div>
+</div>
+
+<script>
+function revelar(){
+  document.getElementById('reveal').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
